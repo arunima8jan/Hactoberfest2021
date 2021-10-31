@@ -1,0 +1,25 @@
+import java.util.*;
+public class longwords
+{
+    public static void main(String args[])
+    {
+        Scanner sc=new Scanner(System.in);
+        int n,i=1;
+        n=sc.nextInt();
+        while(i<=n)
+        {
+            String s=sc.next();
+           int l=s.length();
+            if(l>10)
+            { char ch1,ch2;
+            ch1=s.charAt(0);
+            ch2=s.charAt(l-1);
+            int j=l-2;
+                System.out.println(ch1+""+j+""+ch2);
+            }
+            else
+            System.out.println(s);
+        i++;
+        }
+    }
+}
